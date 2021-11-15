@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37612" started-at="2021-06-21T15:55:04 IST" finished-at="2021-06-21T15:55:42 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="37612" started-at="2021-06-21T15:55:04 IST" finished-at="2021-06-21T15:55:42 IST">
+      <class name="AMS12.ReturnProduct">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:AMS12.ReturnProduct@49fc609f]" name="beforeTest" is-config="true" duration-ms="27187" started-at="2021-06-21T15:55:04 IST" finished-at="2021-06-21T15:55:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:AMS12.ReturnProduct@49fc609f]" name="Login" duration-ms="9890" started-at="2021-06-21T15:55:32 IST" finished-at="2021-06-21T15:55:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:AMS12.ReturnProduct@49fc609f]" name="afterTest" is-config="true" duration-ms="399" started-at="2021-06-21T15:55:42 IST" finished-at="2021-06-21T15:55:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- AMS12.ReturnProduct -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
