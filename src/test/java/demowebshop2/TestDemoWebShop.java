@@ -44,6 +44,9 @@ public class TestDemoWebShop {
 		driver.findElement(By
 				.xpath("//body/div[4]/div[1]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/form[1]/div[5]/input[1]"))
 				.click();
+	}
+		
+		@Test(dependsOnMethods= {"login"})
 public ArrayList<String> getDatas(String testcaseName) throws IOException{
 //can use excel to get the login credentials
 //fileinputstream to give the path
@@ -92,9 +95,10 @@ public ArrayList<String> getDatas(String testcaseName) throws IOException{
 
 		}
 		return a;	
-}
+		}
 //validate that user account id on top right
-
+@Test(dependsOnMethods= {"login,getDatas"})
+public void shopkart() {
 		// clear the shopping cart.
 		driver.findElement(By.xpath("//span[contains(text(),'Shopping cart')]")).click();
 		driver.findElement(By.xpath("//tbody/tr[1]/td[1]/input[1]")).click();
@@ -174,6 +178,7 @@ public ArrayList<String> getDatas(String testcaseName) throws IOException{
 		driver.findElement(By.xpath("//a[contains(text(),'Log out')]")).click();
 
 	}
+
 
 	@BeforeTest
 	public void beforeTest() {
